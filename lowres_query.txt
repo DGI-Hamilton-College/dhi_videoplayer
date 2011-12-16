@@ -1,0 +1,22 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX fedora_relations: <info:fedora/fedora-system:def/relations-external#>
+PREFIX fedora_model: <info:fedora/fedora-system:def/model#>
+PREFIX fedora_view: <info:fedora/fedora-system:def/view#>
+PREFIX hamilton: <http://hamilton.org/ontology#>
+SELECT $label $clip_index $subbed_clip
+FROM <#ri>
+WHERE {
+{
+$subbed_clip hamilton:isClipOf $collection_object .
+$transcript hamilton:isTranscriptOf $subbed_clip .
+$transcript fedora_model:hasModel <info:fedora/HamiltonJapaneseComparativeFilm:EnglishJapaneseTranscript>
+}
+OPTIONAL
+{
+$subbed_clip fedora_model:label $label
+}
+OPTIONAL
+{
+$subbed_clip hamilton:isClipNumber $clip_index
+}
+}

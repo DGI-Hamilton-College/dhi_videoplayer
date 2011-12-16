@@ -1,0 +1,38 @@
+<?php
+
+// $Id$
+
+/**
+ * Drupal hook for admin form
+ * fedora_repository_name is the name of the top level collection this module will query
+ * fedora_repository_pid is the name of the top level pid.
+ * Stores this info in the drupal variables table.
+ * the name and pid can also be passed as url parameters
+ */
+function dhi_videoplayer_admin() {
+  return "";
+}
+
+function dhi_videoplayer_admin_settings_submit($form, $form_values) {
+  
+}
+
+/**
+ * drupal hook
+ * calls the fedora_repositorys_admin form
+ */
+function dhi_videoplayer_menu() {
+ return "";
+}
+
+/**
+ * drupal hook to show help
+ */
+function dhi_videoplayer_help($path, $arg) {
+  /*switch ($path) {
+    case 'admin/modules#description' :
+      return t('Grabs a list of items from a collection in Drupal that are presented on the home page.');
+    case 'node/add#fedora_repository' :
+      return t('Use this page to grab a list of items from a Fedora collection.');
+  }*/
+}

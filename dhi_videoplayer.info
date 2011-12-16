@@ -1,0 +1,7 @@
+; $Id$
+name = dhi_videoplayer
+dependencies[] = fedora_repository
+dependencies[] = tabs
+description = Islandora Video Player to associate video files with time-synced transcripts.
+core = 6.x
+package = other
