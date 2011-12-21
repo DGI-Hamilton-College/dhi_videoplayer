@@ -86,7 +86,7 @@ class DHiVideoPlayer {
 			
 			if ($label_element) {
 				$label = $label_element->nodeValue;
-				if ($label) {//the label may not be pupulated
+				if ($label) { //the label may not be populated
 					$subbed_clip_data[$subbed_clip_object]['label'] = $label;
 				}
 			}
@@ -127,7 +127,7 @@ class DHiVideoPlayer {
 		}
 		
 		// REST format
-		// http://dora-dev.hpc.hamilton.edu:8080/fedora/objects/HamiltonJapaneseComparativeFilm%3A91/datastreams/LOWRES/content
+		// http://dora-dev.hpc.hamilton.edu:8080/fedora/objects/HamiltonJapaneseComparativeFilm:91/datastreams/LOWRES/content
 		// base url: from line 44 ($query_url)
 		
 

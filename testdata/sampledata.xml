@@ -1,0 +1,37 @@
+<popcorn> 
+	<timeline> 
+		<transcripts>
+			<transcript in="00:00:00:00" out="00:00:14:00" tId="0"></transcript>
+			<transcript in="00:00:14:00" out="00:00:18:00" tId="1"></transcript>
+			<transcript in="00:00:20:00" out="00:00:25:00" tId="2"></transcript>
+			<transcript in="00:00:26:00" out="00:00:34:00" tId="3"></transcript>
+			<transcript in="00:00:42:00" out="00:00:50:00" tId="4"></transcript>
+			<transcript in="00:00:52:00" out="00:00:57:00" tId="5"></transcript>
+			<transcript in="00:01:30:00" out="00:01:35:00" tId="6"></transcript>
+			<transcript in="00:01:38:00" out="00:01:40:00" tId="7"></transcript>
+			<transcript in="00:01:41:00" out="00:01:44:00" tId="8"></transcript>
+			<transcript in="00:01:48:00" out="00:01:53:00" tId="9"></transcript>
+			<transcript in="00:01:54:00" out="00:01:58:00" tId="10"></transcript>
+			<transcript in="00:01:59:00" out="00:02:02:00" tId="11"></transcript>
+			<transcript in="00:02:11:00" out="00:02:13:00" tId="12"></transcript>
+			<transcript in="00:02:16:00" out="00:02:21:00" tId="13"></transcript>
+			<transcript in="00:02:25:00" out="00:02:26:00" tId="14"></transcript>
+			<transcript in="00:02:26:00" out="00:02:28:00" tId="15"></transcript>
+			<transcript in="00:02:29:00" out="00:02:30:00" tId="16"></transcript>
+			<transcript in="00:02:32:00" out="00:02:34:00" tId="17"></transcript>
+			<transcript in="00:02:43:00" out="00:02:46:00" tId="18"></transcript>
+			<transcript in="00:02:48:00" out="00:02:52:00" tId="19"></transcript>
+			<transcript in="00:02:54:00" out="00:02:58:00" tId="20"></transcript>
+			<transcript in="00:02:58:00" out="00:03:01:00" tId="21"></transcript>
+			<transcript in="00:03:08:00" out="00:03:11:00" tId="22"></transcript>
+			<transcript in="00:03:11:00" out="00:03:15:00" tId="23"></transcript>
+			<transcript in="00:03:16:00" out="00:03:20:00" tId="24"></transcript>
+			<transcript in="00:03:20:00" out="00:03:24:00" tId="25"></transcript>
+			<transcript in="00:03:33:00" out="00:03:37:00" tId="26"></transcript>
+			<transcript in="00:03:38:00" out="00:03:45:00" tId="27"></transcript>
+			<transcript in="00:03:56:00" out="00:03:57:00" tId="28"></transcript>
+			<transcript in="00:03:57:00" out="00:04:01:30" tId="29"></transcript>
+			<transcript in="00:04:02:00" out="00:04:08:00" tId="30"></transcript>
+		</transcripts>
+	</timeline> 
+</popcorn>
