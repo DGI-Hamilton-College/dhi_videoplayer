@@ -52,7 +52,17 @@ class DHiVideoPlayer {
   $result_nodes_length = $result_nodes->length;
   
   // Add javascript here
-  //drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/jQuery/jquery-1.6.2.min.js');
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/jquery-1.5.2.min.js');
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/jquery.lightbox-0.5.min.js');
+  
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/video.js');
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/popcorn/popcorn.js');
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/popcorn/plugins/footnote/popcorn.footnote.js');
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/popcorn/plugins/transcript/popcorn.transcript.js');
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/parsers/parserXML/popcorn.parseXML.js');
+  
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/popcorn/config.js');
+  drupal_add_js(drupal_get_path('module', 'dhi_videoplayer') . '/js/dhi.transcriptHighlight.js');
   
   
   // DELETE ME, TESTING PURPOSES ONLY
