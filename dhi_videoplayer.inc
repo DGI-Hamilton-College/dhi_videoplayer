@@ -78,15 +78,19 @@ class DHiVideoPlayer {
 			$label_element = $result_node->getElementsByTagName('label')->item(0);
 			$clip_index_element = $result_node->getElementsByTagName('clip_index')->item(0);
 			$subbed_clip_element = $result_node->getElementsByTagName('subbed_clip')->item(0);
+			$transcript_element = $result_node->getElementsByTagName('transcript')->item(0);
 			
 			$subbed_clip_object = $subbed_clip_element->getAttribute('uri');
 			$subbed_clip_object = substr($subbed_clip_object, 12, strlen($subbed_clip_object));//need to extract the pid
+			
+			$transcript_object = $transcript_element->getAttribute('uri');
+			$transcript_object = substr($transcript_object, 12, strlen($transcript_object)); // extract PID
 			
 			$subbed_clip_data[$subbed_clip_object] = array();
 			
 			if ($label_element) {
 				$label = $label_element->nodeValue;
-				if ($label) { //the label may not be populated
+				if ($label) {//the label may not be pupulated
 					$subbed_clip_data[$subbed_clip_object]['label'] = $label;
 				}
 			}
@@ -98,11 +102,16 @@ class DHiVideoPlayer {
 				}
 			}
 			
+			if ($transcript_object) {
+				$subbed_clip_data[$subbed_clip_object]['transcript'] = $transcript_object;
+			}
+			
 			// DELETE ME, TESTING PURPOSES ONLY
 			$html .= "<p>Result {$i}<br />
 			<strong>Label:</strong> {$label}<br />
 			<strong>Clip Index:</strong> {$clip_index}<br />
-			<strong>URI:</strong> {$subbed_clip_object}</p>\n";
+			<strong>URI:</strong> {$subbed_clip_object}<br />
+			<strong>Transcript:</strong> {$transcript_object}</p>\n";
 			
 		}
 		//return $subbed_clip_data;
@@ -127,7 +136,7 @@ class DHiVideoPlayer {
 		}
 		
 		// REST format
-		// http://dora-dev.hpc.hamilton.edu:8080/fedora/objects/HamiltonJapaneseComparativeFilm:91/datastreams/LOWRES/content
+		// http://dora-dev.hpc.hamilton.edu:8080/fedora/objects/HamiltonJapaneseComparativeFilm%3A91/datastreams/LOWRES/content
 		// base url: from line 44 ($query_url)
 		
 
